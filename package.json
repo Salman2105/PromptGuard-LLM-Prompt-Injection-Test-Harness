@@ -1,0 +1,22 @@
+{
+  "name": "promptguard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Educational LLM prompt-injection test harness with manual-review indicators",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/app.js",
+    "test:prompts": "node scripts/run-tests.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "mongoose": "^9.10.3",
+    "openai": "^7.25.0"
+  }
+}
